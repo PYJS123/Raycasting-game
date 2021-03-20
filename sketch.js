@@ -2,6 +2,7 @@ let player;
 
 function setup() {
   createCanvas(400, 400);
+  background(51);
   player = new Player(width / 2, height / 2, 0, 3, 10);
 }
 
