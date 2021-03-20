@@ -20,8 +20,8 @@ function draw() {
     player.spd = 0;
   }
   if (keyIsDown(LEFT_ARROW)) {
-      player.rot -= 0.1;
+      player.rot -= 0.05;
   } else if (keyIsDown(RIGHT_ARROW)) {
-      player.spd += 0.1;
+      player.spd += 0.05;
   }
 }
