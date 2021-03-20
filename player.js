@@ -4,11 +4,21 @@ class Player {
     this.y = y;
     this.rot = rot;
     this.spd = spd;
+    this.PERMspd = spd;
     this.w = w
   }
 
   show() {
-    ellipse(this.x, this.y, 5, 5);
+    push();
+    fill(255, 125, 51);
+    noStroke();
+    ellipse(this.x, this.y, 12, 12);
+    strokeWeight(5);
+    stroke(255, 125, 51);
+    let x = cos(this.rot + (PI / 2)) * this.PERMspd * 10,
+        y = sin(this.rot + (PI / 2)) * this.PERMspd * 10;
+    line(this.x - x, this.y - y, this.x + x, this.y + y);
+    pop();
   }
 
   update() {
