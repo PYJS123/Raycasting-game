@@ -22,6 +22,6 @@ function draw() {
   if (keyIsDown(LEFT_ARROW)) {
       player.rot -= 0.05;
   } else if (keyIsDown(RIGHT_ARROW)) {
-      player.spd += 0.05;
+      player.rot += 0.05;
   }
 }
